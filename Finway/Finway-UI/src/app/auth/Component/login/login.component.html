@@ -1,0 +1,71 @@
+<div class=" d-flex align-items-center justify-content-center flex-column login-container m-auto vh-100 ">
+
+    <div class="border p-4 rounded-1 shadow-lg">
+        <div class="pb-3">
+            <div class="w-50 m-auto px-2 cursor-pointer" routerLink="/">
+                <img src="https://finway-eg.com/media/ypal1vhb/finway-logo.png" class="w-100 logo-img" alt="">
+            </div>
+        </div>
+        <div class="w-100">
+            <form [formGroup]="loginForm">
+
+
+                <!-- Email input -->
+                <div>
+                    <input type="email" id="Email" name="email" class="form-control form-control-lg "
+                        formControlName="email" required />
+                </div>
+
+                <!-- Password input -->
+                <div class="py-3">
+                    <input type="password" id="Password" class="form-control form-control-lg " name="password"
+                        formControlName="password" required />
+                </div>
+
+                <div class="row mb-3 d-flex align-items-center justify-content-between ">
+
+                    <div class="col d-flex justify-content-start">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                            <label class="form-check-label" for="form2Example31">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-end ">
+                        <a href="#!">Forgot password?</a>
+                    </div>
+                </div>
+
+
+                <button type="button" (click)="login()" class="login-btn ">log in </button>
+                <!-- Submit button -->
+                <!-- <button pButton [loading]="loading" loadingIcon ="fa-solid fa-ellipsis fa-beat fs-3" [label]="lablestring" type="button" (click)="login()" class=" btn btn-primary btn-block mb-4 w-100"></button> -->
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                    <p>Not a member? <a>Register</a></p>
+                    <p>or sign up with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-facebook-f text-black"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-google text-black"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-twitter text-black"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-github text-black"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>

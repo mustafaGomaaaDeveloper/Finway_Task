@@ -1,0 +1,98 @@
+.login-btn {
+  background-color: #556fff;
+  color: #fff;
+  width: 100%;
+  margin-top: 23px;
+  margin-bottom: 10px;
+  padding: 16px 40px 17px;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  text-transform: uppercase;
+  border: 1px solid #556fff;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+  .login-btn {
+    padding: 12px 40px 13px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .login-btn {
+    padding: 12px 40px 13px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .login-btn {
+    padding: 12px 40px 13px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .login-btn {
+    padding: 12px 40px 13px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .login-btn {
+    padding: 12px 40px 13px;
+    font-size: 14px;
+  }
+}
+
+.login-btn:hover {
+  background-color: #fff;
+  color: #556fff;
+  border: 1px solid #556fff;
+}
+
+.login-container {
+  width: 30%;
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+  .login-container {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .login-container {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .login-container {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .login-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .login-container {
+    width: 80%;
+  }
+}
+
+.form-check-input[type="checkbox"]:checked:after {
+  margin-left: -0.31rem;
+}
+
+@media only screen and (max-width: 407px) {
+  .form-check {
+    width: 8%;
+  }
+}

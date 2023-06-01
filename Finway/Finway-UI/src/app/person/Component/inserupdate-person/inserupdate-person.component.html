@@ -1,0 +1,46 @@
+<form [formGroup]="personForm" (ngSubmit)="submitFormperson()" class="row g-3">
+
+    <div class="col-md-12">
+        <label for="id_number" class="form-label">Full Name</label>
+        <input formControlName="name" [class.is-invalid]="Name.touched && Name.invalid" type="text" class="form-control"
+            id="id_number">
+        <div *ngIf="Name.touched && Name.errors?.required" class="d-block invalid-feedback">Provide your Full Name.
+        </div>
+    </div>
+    <div class="col-md-12">
+        <label for="id_email" class="form-label">Email address</label>
+        <input formControlName="email" [class.is-invalid]="email.touched && email.invalid" type="email"
+            class="form-control" id="id_email">
+        <div *ngIf="email.invalid && email.touched">
+            <div *ngIf="email.errors?.required" class="d-block invalid-feedback">Please
+                provide a Email.</div>
+            <div *ngIf="email.errors?.email" class="d-block invalid-feedback">Email address is not valid</div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <label for="id_number" class="form-label">Date Of Birth</label>
+        <input formControlName="dateOfBirth" [class.is-invalid]="dateOfBirth.touched && dateOfBirth.invalid"
+            type="datetime" class="form-control" id="id_number">
+        <div *ngIf="dateOfBirth.touched && dateOfBirth.errors?.required" class="d-block invalid-feedback">Provide your
+            Date Of Birth.
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <label for="id_number" class="form-label">Country</label>
+        <input formControlName="country" [class.is-invalid]="country.touched && country.invalid" type="text"
+            class="form-control" id="id_number">
+        <div *ngIf="country.touched && country.errors?.required" class="d-block invalid-feedback">Provide your Country
+            Name.
+        </div>
+    </div>
+
+
+    <div class="col-md-6 mt-4">
+        <button [disabled]="personForm.invalid" type="submit" class="btn btn-primary px-5">Submit</button>
+        <button type="button" class="btn btn-secondary px-3 ms-2" routerLink="/">Cancel</button>
+    </div>
+</form>

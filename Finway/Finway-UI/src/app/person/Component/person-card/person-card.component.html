@@ -1,0 +1,19 @@
+<div class="card p-4">
+    <div class="d-flex justify-content-center alighn-items-center">
+        <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector.png" width="100" height="100"
+            alt="">
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center alighn-items-center flex-column">
+        <a [routerLink]="['editperson/',personcardData.id]">
+            <span class="fw-bold">Name :{{personcardData.name}} </span>
+        </a>
+        <span class="fw-semibold">country : {{personcardData.country}}</span>
+        <span class="fw-semibold">Age : {{personcardData.dateOfBirth | dateToAge}}</span>
+        <span class="fw-semibold">Email : {{personcardData.email}}</span>
+    </div>
+    <div class="ms-auto pt-4">
+        <button class="btn btn-primary fw-bold" (click)="printPage()">Print</button>
+
+    </div>
+</div>
